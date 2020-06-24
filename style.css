@@ -1,0 +1,656 @@
+/*
+header{
+    background-color: black;
+    background-image: url("/static/blueground-apartment-2-2-2\ copy.jpg");
+    background-size: 100%;
+    background-position:center ;
+    height: 300px;
+    padding: 20px;
+}
+div.hed{
+    display : flex;
+    flex-direction: row;
+}
+h2{
+    color:white;
+    font-family: sans-serif;
+}*/
+body{
+    background-color: rgba(0, 0, 0, 0.842);
+    font-size: medium;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+section.feature-box.closeouts {
+    display:flex;
+    flex-direction: row;
+    
+}
+/*
+ul#menu{
+    margin-left: 550px;
+}
+ul#menu
+li{
+    display:inline-block;
+    color:black;
+    padding: 5px;
+}
+ul#menu
+li.button{
+    display:inline-block;
+    color:black;
+    padding: 5px;
+}
+ul#menu
+ li a{
+     color:black;
+     font-family: sans-serif;
+     position: relative;;
+     display: block;
+     overflow: hidden;
+     transition: 0.7s all;
+     text-align: end;
+     font-size:large;
+     text-decoration:none;
+ }
+ul#menu li.button,li.sign-in{
+     color:black;
+     font-family: sans-serif;
+     position: relative;;
+     overflow: hidden;
+     transition: 0.7s all;
+     font-size:large;
+     cursor: pointer;
+}
+ul#menu
+ li a:hover{
+    content: '';
+    border-bottom: 2px solid black;
+    bottom: 0;
+    font-size: larger;
+    transition: 0.7s all;
+}
+ul#menu
+ li.button:hover{
+    content: '';
+    border-bottom: 2px solid black;
+    bottom: 0;
+    font-size: larger;
+    transition: 0.7s all;
+}
+div.hed2{
+    display:flex;
+    flex-direction:row;
+}*/
+div.form-group{
+  position: absolute;
+  top:40%;
+  left:20%;
+  z-index: 1;
+  box-shadow: 2px 2px 5px 3px black;
+}
+div.feature-box{
+    height:250px;
+    width: 250px;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: transform 1s ease-in;
+    transform-style:preserve-3d;
+    cursor: pointer;
+    position: relative;
+    top:50%;
+    
+}
+div.conf{
+    height:250px;
+    width:250px;
+    position:relative;
+    transition:transform 1s ease-in;
+    transform-style: preserve-3d;
+}
+div.bloga{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+}
+div.back{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    background-color: white;
+}
+div.bloga img{
+    width:100%;
+    height:100%;
+}
+div.bloga ::before{
+    position: absolute;
+    content:"";
+    transform:translateZ(100px);
+}
+div.back{
+    transform:rotateY(180deg);
+    background-color: white;
+}
+div.back-body{
+    text-align: center;
+    font-family: sans-serif;
+    top:50%;
+    left:50%;
+    color:black;
+    transform: translate(-50%,+50%);
+    transform: translateZ(150px);
+}
+div.feature-box:hover div.conf{
+    transform:rotateY(180deg);
+}
+h2 strong{
+  color: white;
+}
+h3{
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+div.carousel-caption{
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.3);
+}
+/*
+h4{
+  color: white;
+}
+
+div.feature-box.b{
+    height:250px;
+    width: 250px;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: transform 1s ease-in;
+    transform-style:preserve-3d;
+    cursor: pointer;
+    position: relative;
+    top:50%;
+    margin-left: 100px;
+}
+div.feature-box.b:hover div.conf{
+    transform:rotateY(180deg);
+}
+section.feature-box.bhks{
+    display:flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+div.feature-box.c{
+    height:250px;
+    width: 250px;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: transform 1s ease-in;
+    transform-style:preserve-3d;
+    cursor: pointer;
+    position: relative;
+    top:50%;
+    margin-left: 10px;
+}
+div.feature-box.c:hover div.conf{
+    transform:rotateY(180deg);
+}
+div.feature-box.d{
+    height:250px;
+    width: 250px;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: transform 1s ease-in;
+    transform-style:preserve-3d;
+    cursor: pointer;
+    position: relative;
+    top:50%;
+    margin-left: 100px;
+}
+div.feature-box.d:hover div.conf{
+    transform:rotateY(180deg);
+}*/
+/* search box*/
+div.search-box{
+    
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 45%;
+    left:50%;
+    transform:translate(-50%,+50%);
+    background: white;
+    height:50px;
+    border-radius: 40px;
+    padding:10px;
+    width:400px;
+    z-index:2;
+    opacity: 1;
+    box-shadow: 3px 3px 4px 3px;
+}
+a.search-btn{
+    background-image: url("/static/Artboard_14-512.webp");
+    background-size:100%;
+    float:right;
+    width:40px;
+    height:40px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+input.search-txt{
+    
+    background: none;
+    border:40px;
+    outline:none;
+    float: left;
+    padding: 0;
+    color:black;
+    font-family: sans-serif;
+    font-size: 20px;
+    transition:0.4s;
+    line-height: 30px;
+    width:350px;
+    height: 30px;
+}
+/*
+div.disca{
+    position: absolute;
+    bottom:0;
+    background: rgba(128, 128, 128, 0.068);
+    width:100%;
+    padding:5px;
+    transition: .3s linear;
+    display:none;
+}
+section.feature-box.fc{
+    display:flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+div.feature-box.e{
+    height:250px;
+    width: 250px;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: transform 1s ease-in;
+    transform-style:preserve-3d;
+    cursor: pointer;
+    position: relative;
+    top:50%;
+    margin-top:10px;
+}
+div.feature-box.e:hover div.conf{
+    transform:rotateY(180deg);
+}
+button#house{
+    height:50px;
+    color:white;
+    background: limegreen;
+    border-radius: 30px;
+    font-family: sans-serif;
+    border:none;
+}
+button#house:hover {
+    box-shadow: 10px;
+}
+div.feature-box.f{
+    height:250px;
+    width: 250px;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: transform 1s ease-in;
+    transform-style:preserve-3d;
+    cursor: pointer;
+    position: relative;
+    top:50%;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+div.feature-box.f:hover div.conf{
+    transform:rotateY(180deg);
+}
+section.feature-box.up{
+    display:flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+div.feature-box.g{
+    height:250px;
+    width: 250px;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: transform 1s ease-in;
+    transform-style:preserve-3d;
+    cursor: pointer;
+    position: relative;
+    top:50%;
+    margin-top: 10px; 
+    margin-bottom: 20px;   
+}
+div.feature-box.g:hover div.conf{
+    transform:rotateY(180deg);
+}
+div.feature-box.h{
+    height:250px;
+    width: 250px;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: transform 1s ease-in;
+    transform-style:preserve-3d;
+    cursor: pointer;
+    position: relative;
+    top:50%;
+    margin-left:100px;
+    margin-bottom: 20px;
+    
+}
+div.feature-box.h:hover div.conf{
+    transform:rotateY(180deg);
+}
+button.buy{
+    position: absolute;
+    top: 40%;
+    left:40%;
+    transform:translate(-50%,+50%);
+    background: transparent;
+    border-color: white;
+    height:40px;
+    border-radius: 40px;
+    padding:10px;
+    width: 80px;
+    font-family: sans-serif;
+    font-size: medium;
+    color: white;
+}
+button.buy:hover{
+    background:white ;
+    color:black;
+}
+button.Rent{
+    position: absolute;
+    top: 40%;
+    left:50%;
+    transform:translate(-50%,+50%);
+    background: white;
+    height:40px;
+    border-radius: 40px;
+    padding:10px;
+    width: 80px;
+    font-family: sans-serif;
+    font-size: medium;
+    background: transparent;
+    border-color: white;
+    color: white;
+}
+button.Rent:hover{
+    background:white ;
+    color:black;
+}
+button.pg{
+    position: absolute;
+    top: 40%;
+    left:60%;
+    transform:translate(-50%,+50%);
+    background: white;
+    height:40px;
+    border-radius: 40px;
+    padding:10px;
+    width: 80px;
+    font-family: sans-serif;
+    opacity: 1;
+    background: transparent;
+    border-color: white;
+    color: white;
+}
+button.pg:hover{
+    background:white ;
+    color:black;
+}
+
+section.feature-box.bachelors{
+    display:flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+div.feature-box.bach {
+    height: 300px;
+    width:400px;
+    margin-left: 100px;
+    background-color: black;
+    border-radius: 30px;
+    overflow: hidden;
+}
+div.feature-box.living {
+    height: 300px;
+    width:400px;
+    margin-left: 100px;
+    background-color: black;
+    border-radius: 30px;
+    overflow: hidden;
+}
+h1.fea{
+    color: white;
+    font-family: sans-serif;
+}
+section.news{
+    display: flex;
+    flex-direction: column;
+}
+div.newboxa{
+    display: flex;
+    flex-direction:row;
+}
+div.newboxb{
+    display: flex;
+    flex-direction:row;
+}
+div.newboxc{
+    display: flex;
+    flex-direction:row;
+}
+div.common{
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    width:350px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left:20px;
+}
+div.common img{
+    height: 100%;
+    width:100%;
+}
+div.commonnews{
+    height:400px;
+    width: 1200px;
+    background-color:  white;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top:20px ;
+}*/
+div.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place*/ 
+    z-index: 8888; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: scroll; /* Enable scroll if needed*/ 
+    background-color: rgb(0,0,0); /* Fallback color*/ 
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity*/ 
+    }
+    
+div.modal-dialog{
+    background-color: #fefefe;
+    margin: 10vh auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+}
+@media (min-width: 1366px) {
+div.modal-dialog{
+    background-color: #fefefe;
+    margin: 10vh auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+    }
+}
+div.contact-form h2, p {
+    margin: 0 0 20px;
+    font-weight: 400;
+    color: #666;
+}
+span{
+    color: #666;
+    display:block;
+    padding:0 0 5px;
+}
+div.modal-body{
+    padding: 25px;
+    margin: 25px;
+    box-shadow: 0 2px 5px #f5f5f5; 
+    background: #eee; 
+}
+div.modal-body input, textarea {
+    width: calc(100% - 18px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid green;
+    outline: none;
+}
+div.modal-body button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    background: limegreen; 
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+}
+div.modal-body button:hover {
+    background: limegreen;
+    box-shadow: 0px -2px 5px 4px greenyellow inset; 
+}    
+    /* The Close Button */
+a.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+    a.close:hover,
+    a.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Customize the label (the container) */
+label.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+  /* Hide the browser's default checkbox */
+label.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+  /* Create a custom checkbox */
+span.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+label.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+  /* When the checkbox is checked, add a blue background */
+label.container input:checked ~ span.checkmark {
+    background-color: #2196F3;
+}
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+span.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+  /* Show the checkmark when checked */
+label.container input:checked ~ span.checkmark:after {
+    display: block;
+}
+  
+  /* Style the checkmark/indicator */
+label.container span.checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+div.ifr{
+    position: absolute;
+    left: 75%;
+    top: 100%;
+}
+p{
+    color: white;
+}

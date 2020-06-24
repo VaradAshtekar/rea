@@ -1,0 +1,177 @@
+header{
+    background: black;
+    height:70px;
+}
+div.hed{
+    display : flex;
+    flex-direction: row;
+    height:70px;
+}
+header h1 {
+    color:white;
+}
+ul#menu{
+    margin-left: 600px;
+}
+ul#menu
+li{
+    display:inline-block;
+    color:white;
+    padding: 5px;
+}
+ul#menu
+ li a{
+     color:white;
+     font-family: sans-serif;
+     position: relative;;
+     display: block;
+     overflow: hidden;
+     transition: 0.7s all;
+     text-align: end;
+     font-size:large;
+ }
+ 
+ ul#menu
+ li a:hover{
+    content: '';
+    border-bottom: 2px solid white;
+    bottom: 0;
+    font-size: larger;
+    transition: 0.7s all;
+}
+section.filters{
+    display :flex;
+    flex-direction:row;
+}
+
+
+div.form-group{
+    height:40px;
+    width:110px;
+    
+    color:white;
+    border-radius:20px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+section.props{   
+    box-shadow: 1px  4px 5px 6px gray;
+    background: white;
+    width: 800px;
+    margin-top: 30px;
+}
+div.no1{
+    background-position: center;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+div.a{
+    display: flex;
+    flex-direction: row;
+}
+div.but{
+    position: relative;
+    margin-left: 500px;
+}
+button.contact{
+    background:limegreen;
+    color: white;
+    height:30px;
+    border:none;
+    cursor: pointer;
+    position: absolute;
+    top:70%;
+    left:90%;
+}
+div.image{
+    height: 250px;
+    width:250px;
+}
+div.image img{
+    height: 250px;
+    width: 250px;
+}
+div.info{
+    margin-left: 20px;
+}
+div.modal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 8888; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+    /* Modal Content/Box */
+div.modal-content{
+    background-color: #fefefe;
+    margin: 10vh auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+}
+@media (min-width: 1366px) {
+div.modal-content {
+    background-color: #fefefe;
+    margin: 10vh auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+    }
+}
+div.contact-form h2, p {
+    margin: 0 0 20px;
+    font-weight: 400;
+    color: #666;
+}
+span{
+    color: #666;
+    display:block;
+    padding:0 0 5px;
+}
+div.contact-form form {
+    padding: 25px;
+    margin: 25px;
+    box-shadow: 0 2px 5px #f5f5f5; 
+    background: #eee; 
+}
+div.contact-form input, textarea {
+    width: calc(100% - 18px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid green;
+    outline: none;
+}
+div.contact-form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    background: limegreen; 
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+}
+div.contact-form button:hover {
+    background: limegreen;
+    box-shadow: 0px -2px 5px 4px greenyellow inset; 
+}    
+    /* The Close Button */
+a.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+a.close:hover,a.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
